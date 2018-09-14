@@ -4,5 +4,8 @@
   "description": "serverless scrabble server",
   "main": "index.js",
   "author": "Matthew Davis and Dan Simon",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.4"
+  }
 }
