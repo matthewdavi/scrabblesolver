@@ -16,4 +16,5 @@ const findWords = (word, list) => {
     .filter(obj => obj.word !== "")
     .sort((a, b) => b.score - a.score);
 };
-module.exports = { findWords };
+const find = word => findWords(word, wordJson);
+module.exports = { find };
