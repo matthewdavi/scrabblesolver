@@ -1,0 +1,8 @@
+{
+  "name": "scrabble-server",
+  "version": "1.0.0",
+  "description": "serverless scrabble server",
+  "main": "index.js",
+  "author": "Matthew Davis and Dan Simon",
+  "license": "MIT"
+}
