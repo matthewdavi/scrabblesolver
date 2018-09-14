@@ -1,7 +1,6 @@
-import { h, render } from "preact";
+import React from "react";
+import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import registerServiceWorker from "./registerServiceWorker";
 
-render(<App />, document.getElementById("root"));
-registerServiceWorker();
+ReactDOM.render(<App />, document.getElementById("root"));
