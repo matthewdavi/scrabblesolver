@@ -2,7 +2,6 @@
 
 # dependencies
 **/node_modules
-server/dictionary.json
 # testing
 **/coverage
 
