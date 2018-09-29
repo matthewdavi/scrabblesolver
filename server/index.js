@@ -5,14 +5,13 @@
  * @param {!express:Response} res HTTP response context.
  */
 const { find } = require("./utils");
-const cors = require("cors");
 const _findWords = (req, res) => {
-  const message = find(req.body.word);
+  res.set("Access-Control-Allow-Origin", "*");
+  res.set("Access-Control-Allow-Methods", "GET, POST");
+  const message = find(req.body.word.slice(0, 8));
   res.status(200).send(message);
 };
 
 exports.findWords = (req, res) => {
-  cors(req, res, () => {
-    _findWords(req, res);
-  });
+  _findWords(req, res);
 };
